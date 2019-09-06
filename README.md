@@ -8,7 +8,6 @@ We provided the source code of the parallel implementation of ProMiSe, the datas
 ## Usage
 To execute `ProMiSe` to mine the significant sequential patterns that have frequency at least theta from a sequential dataset, you can use the [ProMiSe.jar](ProMiSe.jar) executable file in the repository. The usage is the following:
 
-```
 Usage: java -jar ProMiSe.jar dataset P T theta parallelization strategy   
 
 Arguments:
@@ -20,7 +19,7 @@ Arguments:
 	*   	parallelization: the number of cores of the machine (e.g. 64)
 	*	strategy: the strategy used by ProMiSe to generate random datasets (0 for itemsetsSwaps, 1 for permutations) (e.g. 1)
 
-	Example of usage: java -jar ProMiSe.java SIGN 100 10048 0.4 64 1
+Example of usage: java -jar ProMiSe.java SIGN 100 10048 0.4 64 1
 
 Optional VM parameters (after the java command and before the -jar):
 	
@@ -28,5 +27,4 @@ Optional VM parameters (after the java command and before the -jar):
 
 The significant frequent sequential patterns found are saved in a file, dataset_SFSP.txt, in the data folder.
 The algorithm writes in the standard output the parameters used for the execution, the corrected threshold computed by the algorithm and used to flag a sequential pattern as significant, the number of frequent sequential patterns FSP found using theta as minimum frequency threshold and the number of significant frequent sequential patterns SFSP found using theta as minimum frequency threshold and the corrected threshold for the significativity.  
-
-```  
+  
