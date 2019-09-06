@@ -13,7 +13,7 @@ Usage: java -jar ProMiSe.jar dataset P T theta parallelization strategy
 
 Arguments:
 
-	* 	dataset: the name of the file containing the sequential dataset. The dataset must be a .txt file in the format described in the SPMF Library documentation. It must be in the data folder. It is possible to create subdirectories in the data folder and to include them in this parameter, es: java -jar ProMiSe.jar subdirectory/dataset P T theta parallelization strategy
+	* 	dataset: the name of the file containing the sequential dataset. The dataset must be a .txt file in the format described in the SPMF Library documentation. It must be in the data folder. It is possible to create subdirectories in the data folder and to include them in this parameter, e.g.: java -jar ProMiSe.jar subdirectory/dataset P T theta parallelization strategy
 	*	P: the number of random datasets used for the WY method (e.g. 100)
 	*	T: the number of random datasets for the Monte Carlo estimate of p-values (e.g. 10048)
 	*	theta: the minimum frequency threshold, in (0,1) (e.g. 0.4)
